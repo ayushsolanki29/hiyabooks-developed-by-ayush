@@ -212,25 +212,24 @@ $(document).ready(function () {
     $("#shipping_details").hide();
     $("#payment_section").show();
     $("#paymentPopupClose").hide();
-    $("#PaymentHead").text( "Complete Your Payment");
+    $("#PaymentHead").text("Complete Your Payment");
     startCountdown();
   });
 
   // Handle Pay Now button click
 });
 
-
 function startCountdown() {
-  var seconds = 65;
+  var seconds = 50;
   var countdownInterval = setInterval(function () {
     $("#countdown").text(seconds);
 
     if (seconds === 10) {
-      updateCountdownNotice("Just a few more seconds: Your payment is currently being processed. :)");
-      
+      updateCountdownNotice(
+        "Just a few more seconds: Your payment is currently being processed. :)"
+      );
     } else if (seconds === 6) {
       updateCountdownNotice("Almost there! We are finalizing your payment.");
-     
     } else if (seconds === 4) {
       updateCountdownNotice("Your payment is secured through UPI.");
     }
@@ -247,7 +246,6 @@ function updateCountdownNotice(message) {
   $("#countdownNotice").text(message);
 }
 
-
 function processData(formData) {
   var fullName = formData.userName;
   var phoneNumber = formData.phoneNumber;
@@ -259,8 +257,8 @@ function processData(formData) {
   var deliveryOption = $("input[name='delivery']:checked").val();
   if (deliveryOption == 20) {
     FdeliveryOption = "Domestic Delivery in 5 days ₹" + deliveryOption;
-  }else{
-    FdeliveryOption = " Express Domestic Delivery in 2 days ₹" + deliveryOption;
+  } else {
+    FdeliveryOption = "Express Domestic Delivery in 2 days ₹" + deliveryOption;
   }
   var carttotal = $("#total-total").text(); // Change from .val() to .text()
 
@@ -275,21 +273,27 @@ function processData(formData) {
 
   // Generate WhatsApp message
   var whatsappNumber = "+919723054735"; // Replace with your WhatsApp number
-  var message = `Hello, I would like to place an order.\n-----ORDER DETAILS-----\n ${items
-    .map(
-      (data) =>
-        `- ${data.name} - Price: ₹${data.price}\n`
-    )}\nTOTAL AMOUNT - ₹${carttotal}\nDelivery Option - ${FdeliveryOption}\n\n-----CUSTOMER INFO-----\nName: ${fullName}\nPhone Number: ${phoneNumber}\nEmail: ${email}\nAddress: ${address}\nCity: ${city}\nPostal Code: ${postCode}\n\n-----Payment Status-----\nPending\n\n-------------------\nWe will confirm your order upon receiving the message.`;
-  
+  var message = `Hello, I would like to place an order.\n-----ORDER DETAILS-----\n ${items.map(
+    (data) => `- ${data.name} - Price: ₹${data.price}\n`
+  )}\nTOTAL AMOUNT - ₹${carttotal}\nDelivery Option - ${FdeliveryOption}\n\n-----CUSTOMER INFO-----\nName: ${fullName}\nPhone Number: ${phoneNumber}\nEmail: ${email}\nAddress: ${address}\nCity: ${city}\nPostal Code: ${postCode}\n\n-----Payment Status-----\nPending\n\n-------------------\nWe will confirm your order upon receiving the message.`;
+
   // Generate WhatsApp link
   var whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
     message
   )}`;
 
+  function setCookie(name, value, days) {
+    var expires = "";
+    if (days) {
+      var date = new Date();
+      date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
+      expires = "; expires=" + date.toUTCString();
+    }
+    document.cookie = name + "=" + (value || "") + expires + "; path=/";
+  }
+
   window.location.href = whatsappLink;
 }
-
-
 
 $(document).ready(function () {
   $("#shipping_details").submit(function (event) {
@@ -302,7 +306,7 @@ $(document).ready(function () {
     });
     startCountdown();
 
-    var seconds = 65;
+    var seconds = 50;
     var countdownInterval = setInterval(function () {
       if (seconds <= 0) {
         clearInterval(countdownInterval);

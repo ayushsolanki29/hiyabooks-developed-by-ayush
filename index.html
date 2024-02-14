@@ -5,15 +5,18 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
 	<title>Hiya Books: Author Raam Jaspura - Explore, Discover, and Immerse in Compelling Stories</title>
-	<meta name="description" content="Embark on a literary journey with Hiya Books, crafted by author Raam Jaspura. Dive into a world of captivating stories, rich narratives, and intriguing plots.">
+	<meta name="description"
+		content="Embark on a literary journey with Hiya Books, crafted by author Raam Jaspura. Dive into a world of captivating stories, rich narratives, and intriguing plots.">
 	<meta name="keywords" content="Hiya Books, books, literature, stories, reading, Raam Jaspura, bookshop, bookstore">
 	<!-- Open Graph / Facebook -->
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="https://ayushsolanki29.github.io/hiyabooks-developed-by-ayush/">
-	<meta property="og:title" content="Hiya Books: Author Raam Jaspura - Explore, Discover, and Immerse in Compelling Stories">
-	<meta property="og:description" content="Embark on a literary journey with Hiya Books, crafted by author Raam Jaspura. Dive into a world of captivating stories, rich narratives, and intriguing plots.">
+	<meta property="og:title"
+		content="Hiya Books: Author Raam Jaspura - Explore, Discover, and Immerse in Compelling Stories">
+	<meta property="og:description"
+		content="Embark on a literary journey with Hiya Books, crafted by author Raam Jaspura. Dive into a world of captivating stories, rich narratives, and intriguing plots.">
 	<meta property="og:image" content="https://ayushsolanki29.github.io/hiyabooks-developed-by-ayush/img/og-img.png">
-	
+
 	<meta content="width=device-width, initial-scale=1" name="viewport">
 	<meta content="width=device-width" name="viewport">
 	<meta content="IE=edge" http-equiv="X-UA-Compatible">
@@ -31,8 +34,9 @@
 	<div class="page-loader">
 		<div class="loader">Loading...</div>
 	</div>
-	<!-- /PRELOADER -->
-	<!-- header -->
+
+
+
 	<nav class="navbar navbar-fixed-top shadow" id="js-nav">
 		<div class="container">
 			<div class="navbar-header">
@@ -50,6 +54,7 @@
 					<li><a href="#products">products</a></li>
 					<li><a href="#about">about us</a></li>
 					<li><a href="#contact">contact</a></li>
+					<li><a href="#" data-bs-toggle="modal" data-bs-target="#returnToBrowserModal">check</a></li>
 
 				</ul>
 			</div>
@@ -57,11 +62,12 @@
 	</nav>
 	<!--/ End header -->
 
+
 	<!-- slider -->
 	<section class="home section image-slider" id="home">
 		<div class="home-slider text-center">
 			<div class="swiper-wrapper">
-				
+
 
 				<div class="swiper-slide" style="background: url(img/slider/slide1.jpg);">
 					<h2>Get Discount On<span class="hglight"> Every Book</span></h2>
@@ -70,7 +76,8 @@
 							products</a> </div>
 					<a class="arrow bounce text-center" href="#about"> <span class="ti-mouse"></span> <span
 							class="ti-angle-double-down"></span> </a>
-				</div><div class="swiper-slide" style="background: url(img/slider/slide1.jpg);">
+				</div>
+				<div class="swiper-slide" style="background: url(img/slider/slide1.jpg);">
 					<h2>New Book Launching <span class="hglight">Soon</span></h2>
 					<h2 class="home-slider-title-main">Cooming Soon</h2>
 					<div class="home-buttons text-center"> <a href="#products" class="btn btn-lg  btn-primary">our
@@ -108,7 +115,7 @@
 				<h4 class="section-heading">Delivery option</h4>
 
 				<div class="custom-radio">
-					<input id="radio1" type="radio" name="delivery" value="20.00" required >
+					<input id="radio1" type="radio" name="delivery" value="20.00" required>
 					<label for="radio1">Domestic delivery (₹20)</label>
 					<div class='alert alert-warning'>Domestic Delivery in 5 days</div>
 				</div>
@@ -122,21 +129,22 @@
 			</div>
 			<div class="final-summary" id="final_summary" style="display: none;">
 
-			<div class="cart-summary" id="cart-summary">
-				<h4 class="section-heading">summary</h4>
-				<div class="cart-summary-row" id="cart-total">Total products <span class="cart-value">₹<span
-							id="cost_value">0.00</span></span></div>
-				<div class="cart-summary-row">Shipping <span class="cart-value">₹<span id="cost_delivery"></span></span>
+				<div class="cart-summary" id="cart-summary">
+					<h4 class="section-heading">summary</h4>
+					<div class="cart-summary-row" id="cart-total">Total products <span class="cart-value">₹<span
+								id="cost_value">0.00</span></span></div>
+					<div class="cart-summary-row">Shipping <span class="cart-value">₹<span
+								id="cost_delivery"></span></span>
+					</div>
+					<div class="cart-summary-row cart-summary-row-total">Total <span class="cart-value">₹<span
+								id="total-total"></span></span></div>
 				</div>
-				<div class="cart-summary-row cart-summary-row-total">Total <span class="cart-value">₹<span
-							id="total-total"></span></span></div>
-			</div>
 
-			<form  class="cart-form" id="cart-form">
-				<button type="button" name="submit" class="btn btn-default btn-lg" data-target="#payment"
-					data-toggle="modal">
-					UPI checkout <span class="ti-arrow-right"></span>
-				</button>
+				<form class="cart-form" id="cart-form">
+					<button type="button" name="submit" class="btn btn-default btn-lg" data-target="#payment"
+						data-toggle="modal">
+						UPI checkout <span class="ti-arrow-right"></span>
+					</button>
 			</div>
 
 
@@ -153,18 +161,18 @@
 				<div class="modal-body">
 					<div class="container">
 
-						<h3 class="text-center" id="PaymentHead" >Enter Your Shipping Details</h3>
+						<h3 class="text-center" id="PaymentHead">Enter Your Shipping Details</h3>
 						<form id="shipping_details" method="post">
 							<div class="row">
 								<div class="form-group col-md-7">
 									<label for="userName">Full Name:</label>
-									<input type="text" class="form-control" id="userName"  name="userName"
+									<input type="text" class="form-control" id="userName" name="userName"
 										placeholder="Enter Your Full Name" required>
 								</div>
 								<div class="form-group col-md-5">
 									<label for="userName">UPI ID:</label>
-									<input type="text" class="form-control" id="upiId"
-										placeholder="Enter Your UPI ID" name="upiid" required>
+									<input type="text" class="form-control" id="upiId" placeholder="Enter Your UPI ID"
+										name="upiid" required>
 									<small class="text-muted">Example: johnmark@okicic</small>
 								</div>
 							</div>
@@ -174,19 +182,19 @@
 							<div class="form-group">
 
 								<label for="phoneNumber">Phone Number:</label>
-								<input type="tel" class="form-control"  id="phoneNumber" pattern="\d{10}"
+								<input type="tel" class="form-control" id="phoneNumber" pattern="\d{10}"
 									title="Please enter a Valid Phone Number" placeholder="Enter Your Whatsapp Number"
 									name="phoneNumber" required>
 								<small class="text-muted">Example: 9876543210</small>
 							</div>
 							<div class="form-group">
 								<label for="email">Email:</label>
-								<input type="email" class="form-control"  id="email"
+								<input type="email" class="form-control" id="email"
 									placeholder="Enter Your Email Address" name="email" required>
 							</div>
 							<div class="form-group">
 								<label for="address">Address:</label>
-								<textarea name="address" class="form-control"id="address"
+								<textarea name="address" class="form-control" id="address"
 									placeholder="e.g., 14,South Complex, Near S.G High Way, Ahemdabad - 382725 "
 									cols="3" required></textarea>
 
@@ -209,27 +217,31 @@
 								Note: Please ensure that you enter your real identity information. This helps us provide
 								you with a secure and personalized service.
 							</p>
-							<button type="submit" class="btn btn-primary">Submit</button> 
+							<button type="submit" class="btn btn-primary">Submit</button>
 							<hr>
 						</form>
 						<div class="text-center" id="payment_section" style="display: none;">
 							<!-- Payment section content -->
 							<!-- QR Code will be dynamically generated here -->
-							<div class="alert alert-Info" >Please Take A screenshot of Your Payment</div>
+							<div class="alert alert-Info">Please Take A screenshot of Your Payment</div>
 							<div id="qrCodeContainer"></div>
 							<h4 class="text-success" id="qrinfotext">Scan the QR code Above to pay.</h4>
-							<hr>or<hr>
-							
-							<button type="button" class="btn btn-primary" id="payNowBtn" data-upi-link="">Pay Now </button>
+							<hr>or
 							<hr>
-							<div class="alert alert-success" id="countdownNotice">Please Complete Your Payment in </div> <span id="countdown">100</span> seconds
+
+							<button type="button" class="btn btn-primary" id="payNowBtn" data-upi-link="">Pay Now
+							</button>
+							<hr>
+							<div class="alert alert-success" id="countdownNotice">Please Complete Your Payment in </div>
+							<span id="countdown">50</span> seconds
 						</div>
-						
+
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+
 
 
 	<!-- products area -->
@@ -339,7 +351,7 @@
 										</div>
 										<div class="col-md-5">
 											<span class="product-right-section">
-												<span>₹187.00</span>
+												<span> <del>₹260.00</del> ₹187.00</span>
 												<button class="btn btn-default add-item" type="button"
 													data-image="img/book1/1.jpg" data-name="મેઘધનુષનો આઠમો રંગ"
 													data-cost="187.00" data-id="8">
@@ -352,16 +364,20 @@
 									<div class='alert alert-success'>Delivery in 5 days <strong>Esitimatly Date</strong>
 									</div>
 									<h4 class="section-heading">Summary of Book</h4>
-									<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-										incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, </p>
-									<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-										incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-										nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-										Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-										fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-										culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit
-										amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-										et dolore magna aliqua. Ut enim ad minim veniam, </p>
+									<article style="padding-bottom: 20px;">
+									<p>This is the author's debut work. This collection contains sixteen short stories.
+										All these stories portray emotions such as affection, passion, resolution,
+										patience, and faith. There are stories depicting rural and urban life. Some
+										stories concern Freudian Theory as well. All stories are a good work of art,
+										glaringly expressing the author's craftsmanship in writing.</p>
+
+									<ul>
+										<li>The author is interested in man. These stories echo human relationships,
+											longing for love, and pining in detachment.</li>
+										<li>These stories deal with man's incapacity for a harmonious relationship with
+											the world he lives in.</li>
+									</ul>
+								</article>
 									<div class="row">
 										<div class="col-md-6"> <img src="img/book1/1.jpg" class="img-responsive"
 												alt="product image"> </div>
@@ -369,14 +385,15 @@
 											<h4 class="section-heading">Details of Book</h4>
 											<p>
 											<ul>
-												<li> <strong>Category</strong> : Category</li>
-												<li><strong>Author</strong> : Author</li>
-												<li> <strong>Language</strong> : Gujarati</li>
-												<li> <strong>Total Pages</strong> : 203</li>
-												<li> <strong>Price</strong> : ₹300</li>
-												<li><strong>Offer Price</strong> : ₹233</li>
-												<li> <strong>Publisher</strong> : Publisher</li>
-												<li><strong>Published</strong> : 2024-01-09</li>
+												<li> <strong>Category</strong> : વાર્તા સંગ્રહ</li>
+												<li> <strong>Book Title </strong> : મેઘધનુષનો આઠમો રંગ</li>
+												<li><strong>Author</strong> : રામ જાસપુરા</li>
+												<li> <strong>Language</strong> : ગુજરાતી </li>
+												<li> <strong>Total Pages</strong> : ૧૩૧</li>
+												<li> <strong>Price</strong> : ₹૨૬૦.૦૦/- </li>
+												<li><strong>Offer Price</strong> : ₹૧૮૭.૦૦/-</li>
+												<li> <strong>Publisher</strong> : રાન્નદે પ્રકાશન</li>
+												<li><strong>Published</strong> : ૨૦૨૪ - ૦૧ - ૨૩ </li>
 
 											</ul>
 
@@ -387,27 +404,37 @@
 										<ul class="nav nav-tabs">
 											<li class="active"><a data-toggle="tab" href="#tab1">Payment</a></li>
 											<li><a data-toggle="tab" href="#tab2">Author</a></li>
-											<li><a data-toggle="tab" href="#tab3">other</a></li>
+											<li><a data-toggle="tab" href="#tab3">Delivery</a></li>
 										</ul>
 										<div class="tab-content">
 											<div id="tab1" class="tab-pane fade in active">
-												<h4 class="section-heading">Payment</h4>
-												<p>Payment Accept <span class="text-success">only UPI</span> </p>
+												<div class="payment-section">
+													<h4 class="section-heading">Payment</h4>
+													<p>We accept payment <span class="text-success">only via UPI</span> (GPay, PhonePay, Paytm, etc. apps).</p>
+												</div>
 											</div>
 											<div id="tab2" class="tab-pane fade">
-												<h4 class="section-heading">Author</h4>
-												<p>Author is Ram Solanki </p>
+												<div class="author-section">
+													<h4 class="section-heading">Author</h4>
+													<p>The author is Ram Solanki (Raam Jaspura).</p>
+												</div>
 											</div>
+											
 											<div id="tab3" class="tab-pane fade">
-												<h4 class="section-heading">other info</h4>
-												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-													eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-													ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-													aliquip ex ea commodo consequat. Duis aute irure dolor in
-													reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-													pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-													culpa qui officia deserunt mollit anim id est laborum. </p>
+												<div class="delivery-section">
+													<h4 class="section-heading">Delivery</h4>
+													<p>We offer two delivery plans:</p>
+													<ul class="delivery-plans">
+														<li>
+															<strong>Domestic Delivery:</strong> ₹20 (Estimated delivery in 5 days)
+														</li>
+														<li>
+															<strong>Domestic Express Delivery:</strong> ₹35 (Estimated delivery in 3 days)
+														</li>
+													</ul>
+												</div>
 											</div>
+											
 										</div>
 									</div>
 								</div>
@@ -455,7 +482,7 @@
 										</div>
 										<div class="col-md-5">
 											<span class="product-right-section">
-												<span>₹187.00</span>
+												<span><del>₹260.00</del> ₹187.00</span>
 												<button class="btn btn-default add-item" type="button"
 													data-image="img/book2/1.jpg" data-name="બોન્સાઈ" data-cost="187.00"
 													data-id="8">
@@ -468,29 +495,26 @@
 									<div class='alert alert-success'>Delivery in 5 days <strong>Esitimatly Date</strong>
 									</div>
 									<h4 class="section-heading">Summary of Book</h4>
-									<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-										incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, </p>
-									<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-										incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-										nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-										Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-										fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-										culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit
-										amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-										et dolore magna aliqua. Ut enim ad minim veniam, </p>
+									<article style="padding-bottom: 20px;">
+
+										<p>This is also the author's debut work. This collection contains fifteen short stories, all of which are Dalit stories. The difference between Dalit literature and other literature is that while other literature is like nursery plants, Dalit literature is like wild plants. It grows in the soil of solid reality.</p>
+										<p>Thus, these stories are different. They portray reality in a plain manner. This collection is a forceful indictment of the evils of our society. These stories depict the terrible suffering and anguish of Dalits. They depict our contemporary social situation and appeal to consider every man as equal. A man has to say, 'Notice me, I am a man like you.'</p>
+									</article>
+										
 									<div class="row">
-										<div class="col-md-6"> <img src="img/book1/1.jpg" class="img-responsive"
+										<div class="col-md-6"> <img src="img/book2/1.jpg" class="img-responsive"
 												alt="product image"> </div>
 										<div class="col-md-6">
 											<h4 class="section-heading">Details of Book</h4>
 											<p>
 											<ul>
 												<li> <strong>Category</strong> : વાર્તા સંગ્રહ</li>
+												<li> <strong>Book Title </strong> : બોન્સાઈ</li>
 												<li><strong>Author</strong> : રામ જાસપુરા</li>
 												<li> <strong>Language</strong> : ગુજરાતી </li>
-												<li> <strong>Total Pages</strong> : ૨૦૩</li>
-												<li> <strong>Price</strong> : ₹૨૮૯</li>
-												<li><strong>Offer Price</strong> : ₹૩૪૦</li>
+												<li> <strong>Total Pages</strong> : ૧૩૦ </li>
+												<li> <strong>Price</strong> : ₹૨૬૦.૦૦/- </li>
+												<li><strong>Offer Price</strong> : ₹૧૮૭.૦૦/-</li>
 												<li> <strong>Publisher</strong> : રાન્નદે પ્રકાશન</li>
 												<li><strong>Published</strong> : ૨૦૨૪ - ૦૧ - ૨૩ </li>
 
@@ -503,27 +527,37 @@
 										<ul class="nav nav-tabs">
 											<li class="active"><a data-toggle="tab" href="#tab11">Payment</a></li>
 											<li><a data-toggle="tab" href="#tab12">Author</a></li>
-											<li><a data-toggle="tab" href="#tab13">other</a></li>
+											<li><a data-toggle="tab" href="#tab13">Delivery</a></li>
 										</ul>
 										<div class="tab-content">
 											<div id="tab11" class="tab-pane fade in active">
-												<h4 class="section-heading">Payment</h4>
-												<p>Payment Accept <span class="text-success">only UPI</span> </p>
+												<div class="payment-section">
+													<h4 class="section-heading">Payment</h4>
+													<p>We accept payment <span class="text-success">only via UPI</span> (GPay, PhonePay, Paytm, etc. apps).</p>
+												</div>
 											</div>
 											<div id="tab12" class="tab-pane fade">
-												<h4 class="section-heading">Author</h4>
-												<p>Author is Ram Solanki </p>
+												<div class="author-section">
+													<h4 class="section-heading">Author</h4>
+													<p>The author is Ram Solanki (Raam Jaspura).</p>
+												</div>
 											</div>
+											
 											<div id="tab13" class="tab-pane fade">
-												<h4 class="section-heading">other info</h4>
-												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-													eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-													ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-													aliquip ex ea commodo consequat. Duis aute irure dolor in
-													reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-													pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-													culpa qui officia deserunt mollit anim id est laborum. </p>
+												<div class="delivery-section">
+													<h4 class="section-heading">Delivery</h4>
+													<p>We offer two delivery plans:</p>
+													<ul class="delivery-plans">
+														<li>
+															<strong>Domestic Delivery:</strong> ₹20 (Estimated delivery in 5 days)
+														</li>
+														<li>
+															<strong>Domestic Express Delivery:</strong> ₹35 (Estimated delivery in 3 days)
+														</li>
+													</ul>
+												</div>
 											</div>
+											
 										</div>
 									</div>
 								</div>
@@ -542,14 +576,15 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<h4>Why should customers choose ?</h4>
-					<h2> <span>our</span> Books</h2>
-					<p>Lorem ipsum dolor sit amet eiusmod tempor incididunt ut labore et dolore magna aliqua.
-						consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-						Ut enim ad minim veniam, quis nostrud exercitatio ex eatikre commodo consequat. Duis aute irure
-						dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatuor.
-						Excepteur sint occaecat cupidataproident, sunt in culpa qui officiad est laboincididunt ut
-						labore et dolore magna aliqua. eiusmeiusmod tempor incididunt ut labore et dolore magna aliqua.
+					<h4>Who is Author?</h4>
+					<h2> <span>Raam</span> Jaspura</h2>
+					<p>Born and brought up, and still living, in the village of Jaspur, the author studied at Ahmedabad
+						Law College, Gandhinagar, and Dr. Ambedkar University, Ahmedabad. His intense interest in
+						English Literature led him first to deep study of literature and then to teaching it to
+						students. He taught English literature to students from F.Y. to M.A. in his coaching classes in
+						Gandhinagar and Kalol from 1998 to 2012. His deep love and interest in English and Gujarati
+						literature have been nurtured in such an environment. The fruits of this are these two
+						collections of short stories.
 					</p>
 					<!-- <div class="read-more-btn">
 						<a href="#">read more</a>
@@ -632,7 +667,8 @@
 				</div>
 				<div class="col-md-8 col-md-push-1">
 					<div class="contact-form">
-						<form class="contact-forms" id="contact-form" action="https://formspree.io/f/xdoqkpnv" method="post">
+						<form class="contact-forms" id="contact-form" action="https://formspree.io/f/xdoqkpnv"
+							method="post">
 							<div class="form-group">
 								<input class="form-control" type="text" name="name" placeholder="Name">
 							</div>
@@ -673,18 +709,18 @@
 	<!-- Footer Section -->
 	<div class="section section-min">
 		<footer class="footer">
-			<div class="container text-center">				
-			
-					<div class="col-md-12 col-sm-12">
-						<div class="footer-copyright">
-							<p>© 2024 Hiyabooks - All Rights Reserved.</p>
-						</div>
+			<div class="container text-center">
+
+				<div class="col-md-12 col-sm-12">
+					<div class="footer-copyright">
+						<p>© 2024 Hiyabooks - All Rights Reserved.</p>
 					</div>
-					<div className="author" >
-						<p> Made with ❤️ by <a href="https://github.com/ayushsolanki29"> Ayush Solanki</a> </p> 
-						 </div>
 				</div>
-			
+				<div className="author">
+					<p> Made with ❤️ by <a href="https://github.com/ayushsolanki29"> Ayush Solanki</a> </p>
+				</div>
+			</div>
+
 		</footer>
 
 	</div>
